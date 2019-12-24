@@ -149,16 +149,51 @@
                     基本資料
                 </legend>
             <p> <label for="">姓名</label>
-                <input type="text" name="name"></p>
+                <input type="text" name="name" placeholder="姓名" required></p>
 
             <p><label for="">密碼</label>
-                <input type="password" name="psw" id=""></p>
+                <input type="password" name="psw" id="psw" placeholder="密碼" required></p>
 
             <p> <label for="">信箱</label>
-                <input type="email" name="email" id=""></p>
+                <input type="email" name="email" id="" placeholder="xxx@email.com"></p>
 
             <p><label for="">電話</label>
                 <input type="tel" name="tel" id=""></p>
+                <p>
+                    <label for="">性別</label>
+                    <input type="radio" name="sex" id="" value="male">男
+                    <input type="radio" name="sex" value="female" id="">女
+                    <input type="radio" name="sex" value="others" id="">其他
+                </p>
+                <p> 
+                    <label for="">我喜歡的食物</label> 
+                    
+                    <input type="checkbox" name="food" id="" value="aa">火鍋
+                    <input type="checkbox" name="food" id="" value="bb">中式
+                    <input type="checkbox" name="food" id="" value="cc">西式
+                </p>
+                <p>
+                    <label for="">我居住的國家</label>
+                    <select name="" id="" size="" multiple>
+                        <option value="">台灣</option>
+                        <option value="" >日本</option>
+                        <option value="" selected >中國</option>
+                        <option value=""  >韓國</option>
+                        <option value=""  >新加坡</option>
+                    </select>
+                    <p>
+                        <label for="我要留言"></label>
+                        <textarea name="" id="" cols="70" rows="10">
+                            留下你的意見
+                        </textarea>
+                    </p>
+                    <input type="color" name="" id="">
+                    <input type="file" name="" id="">
+                    i
+                </p>
+
+
+              
 
 
                 <input type="submit" value="寄出">
