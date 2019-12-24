@@ -1,4 +1,47 @@
 body {
-    background-color: rgb(255, 119, 235);
-    color: #fff
+    background-color: rgb(154, 255, 253);
+    color: rgb(0, 12, 148);
+    margin: 0; 
+     padding: 0;
+}
+header {
+background-color: rgb(248, 9, 9);
+/* height: 100px; */
+
+}
+
+h1 ,h2 ,h3 ,h4 ,h5 , dd ,dt ,dl {
+
+margin: 0;
+padding: 0;
+}
+
+
+p {
+    margin: 0;
+    /* display: inline; */
+}
+
+/* span {
+    display: block;
+} */
+.left-10 {
+    margin-left: 10px;
+}
+
+.prod {
+    width: 250px;
+    height: auto;
+    border: 1px solid #e1ff88;
+    text-align: center;
+}
+
+.prod .img {
+  width: 200px;
+  height: 80px;
+  background-color: rgb(245, 0, 0);
+}
+
+nav ul li {
+display: inline;
 }

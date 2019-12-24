@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- 註解 連結css  -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            color: rgb(0, 255, 51)
-        }
-    </style>
     <script src="js/scripts.js"></script>
-    <script>
-        console.log("內部標籤ok");
-    </script>
-   
     <title>首頁</title>
 </head>
-
 <body>
     <header>
         <div class="logo">logo</div>
         <div class="function_top">功能列</div>
-        <nav>選單</nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a>
+                    </li>
+                <li><a href="product.html">產品</a> 
+                    <ul>
+                        <li>子分類</li>
+                        <li>子分類</li>
+                        <li>子分類</li>
+                        <li>子分c類</li>
+                    </ul>
+                </li>
+                <li><a href="https://tw.yahoo.com/" target="_blank">連結到yahoo</a>
+                    </li>
+                <li><a href="img/git.png" download >下載</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div>div標籤1</div>
-        <div>div標籤2</div>
-        <span>span 標籤1</span>
-        <span>span 標籤2</span>
-        <p>p標籤</p>
         <section>
-            <div class="banner">廣告</div>
-        </section>
-        <section>
-            <div class="production">產品一</div>
-            <div class="production">產品二</div>
-            <div class="production">產品三</div>
-            <div class="production">產品四</div>
-        </section>
-        <section>
-            <div class="production">產品一</div>
-            <div class="production">產品二</div>
-            <div class="production">產品三</div>
-            <div class="production">產品四</div>
+            <h2>段落元素</h2>
+            <h1>h1</h1>
+            <span>span</span> <span>span</span>
+            <div>div</div>
+            <div>div</div>
+            <em>強調</em>
+            <p>3442144<br>3214內容<span class="left-10">折行</span></p>
+            <strong>strong</strong>
+            <h3>strong <sub>下標</sub></h3>
+            <del>刪除文字 <sup>上標</sup></del>
+
+            <dl class="prod">
+                <div class="img">圖片</div>
+                <dt>產品名稱</dt>
+                <dd>產品描述</dd>
+                <div>價錢</div>
+                <button>購買</button>
+            </dl>
+            <ul>
+                <li>項目一</li>
+                <li>項目二</li>
+                <li>項目三</li>
+                <li>項目四</li>
+            </ul>
+
+
+
+
         </section>
     </main>
     <footer>
