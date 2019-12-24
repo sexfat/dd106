@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <script src="js/scripts.js"></script>
     <title>首頁</title>
 </head>
+
 <body>
     <header>
-        <div class="logo">logo</div>
+        <h1 class="logo">公司名稱</h1>
         <div class="function_top">功能列</div>
         <nav>
             <ul>
                 <li><a href="index.html">首頁</a>
-                    </li>
-                <li><a href="product.html">產品</a> 
+                </li>
+                <li><a href="product.html">產品</a>
                     <ul>
                         <li>子分類</li>
                         <li>子分類</li>
@@ -25,9 +27,11 @@
                         <li>子分c類</li>
                     </ul>
                 </li>
+
                 <li><a href="https://tw.yahoo.com/" target="_blank">連結到yahoo</a>
-                    </li>
-                <li><a href="img/git.png" download >下載</a></li>
+                </li>
+                <li><a href="img/git.png" download>下載</a></li>
+                <li><a href="mailto:bryant@gmail.com?subject=信件標題uhiuhguig">聯絡我們</a></li>
             </ul>
         </nav>
     </header>
@@ -62,6 +66,110 @@
 
 
         </section>
+        <article>
+            <header>
+                <section>
+                    <h2>文章標題</h2>
+                </section>
+            </header>
+            <div>
+                <p>內容23432421412424</p>
+            </div>
+        </article>
+        <div class="table">
+            <h4>表格 三行三列</h4>
+            <table>
+                <tr>
+                    <td colspan="2">001</td>
+                    <td>003</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">004</td>
+                    <td>005</td>
+                    <td>006</td>
+                </tr>
+                <tr>
+
+                    <td>008</td>
+                    <td>009</td>
+                </tr>
+            </table>
+            <br><br>
+            <h4>合併儲存格</h4>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" rowspan="2">001</th>
+
+                            <td rowspan="2">003</td>
+                            <td>
+                                <div></div>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>008</td>
+                        </tr>
+                        <tr>
+                            <td>009</td>
+                            <td>010</td>
+                            <td>011</td>
+                            <td>012</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">013</td>
+                            <td colspan="3">014</td>
+
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+
+                            <td>018</td>
+                            <td>019</td>
+                            <td>020</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+
+            <a href="#" title="1111連結">1111</a>
+            <img class="img"
+                src="https://freewebsitetemplates.com/template/herdesignswebtemplate/thumbnails/276x330.jpg"
+                alt="colorful" title="cccc">
+
+        </div>
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>
+                    基本資料
+                </legend>
+            <p> <label for="">姓名</label>
+                <input type="text" name="name"></p>
+
+            <p><label for="">密碼</label>
+                <input type="password" name="psw" id=""></p>
+
+            <p> <label for="">信箱</label>
+                <input type="email" name="email" id=""></p>
+
+            <p><label for="">電話</label>
+                <input type="tel" name="tel" id=""></p>
+
+
+                <input type="submit" value="寄出">
+                <input type="reset" value="重置">
+            </fieldset>
+
+        </form>
+
+
+
+
     </main>
     <footer>
         頁尾

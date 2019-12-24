@@ -3,6 +3,7 @@ body {
     color: rgb(0, 12, 148);
     margin: 0; 
      padding: 0;
+     height: 3000px
 }
 header {
 background-color: rgb(248, 9, 9);
@@ -45,3 +46,20 @@ p {
 nav ul li {
 display: inline;
 }
+
+
+table, th, td {
+    border: 1px solid black;
+     }
+  th, td {
+     padding: 0 15px;
+     text-align: center;
+  }
+
+
+  .img {
+
+  width: 200px;
+  border: 2px solid rgb(42, 201, 42);
+
+  }
