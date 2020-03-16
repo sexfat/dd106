@@ -24,10 +24,12 @@ div {
 }
 
 .wrappers {
-    @include layout-full(1200, #333);
+    @include layout-full(100, rgb(255, 127, 7));
+    min-height: 800px;
 
     h1 {
         font-size: $fontSize * 5;
+        color: #fff;
 
         span {
             font-size: $fontSize;
@@ -110,7 +112,6 @@ $num : 110;
 
 
 .nav {
-
     ul {
         li {
             width: 100px;
@@ -128,13 +129,18 @@ $num : 110;
                     color: green;
                 }
 
-                @include mode(){
+                @include mode() {
                     background-color: #fff;
-                };
+                }
+
+                ;
             }
 
         }
     }
-
-
 }
+
+
+@include btn('.btn', 100px, 10px, rgb(247, 252, 0), $fontSize);
+@include btn('.btn-middle', 110px, 12px, rgb(168, 240, 0), ceil($fontSize*1.2));
+@include btn('.btn-wide', 150px, 15px, #fff, ceil($fontSize*1.5))

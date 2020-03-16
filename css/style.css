@@ -65,48 +65,50 @@ footer {
 }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "arial" san-serif;
   padding: 10px;
   color: #8c8c8c;
 }
 
 body h1 {
-  font-size: 85px;
+  font-size: 74px;
 }
 
 body h2 {
-  font-size: 67px;
+  font-size: 58px;
 }
 
 body h3 {
-  font-size: 60px;
+  font-size: 52px;
 }
 
 body h4 {
-  font-size: 28.8px;
+  font-size: 25.2px;
 }
 
 body h5 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 div {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .wrappers {
-  width: 1200px;
-  background-color: #333;
-  margin: 0 auto;
+  width: 100%;
+  background-color: #ff7f07;
+  display: block;
+  min-height: 800px;
 }
 
 .wrappers h1 {
-  font-size: 80px;
+  font-size: 70px;
+  color: #fff;
 }
 
 .wrappers h1 span {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   display: block;
   position: relative;
@@ -114,7 +116,7 @@ div {
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 56px;
 }
 
 .box-10 {
@@ -196,5 +198,56 @@ h2 {
 .nav ul li a::before, .nav ul li a::after {
   content: '';
   background-color: #fff;
+}
+
+.btn {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f7fc00;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 2px;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn:hover {
+  background: #939600;
+}
+
+.btn-middle {
+  width: 110px;
+  padding: 12px;
+  text-align: center;
+  background-color: #a8f000;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 2px;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn-middle:hover {
+  background: #618a00;
+}
+
+.btn-wide {
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+  margin: 2px;
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn-wide:hover {
+  background: #cccccc;
 }
 /*# sourceMappingURL=style.css.map */

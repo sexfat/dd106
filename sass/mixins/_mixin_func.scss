@@ -104,4 +104,22 @@
        content: '';
        @content 
     }
+};
+
+@mixin btn( $class, $w, $p, $bgc, $fontSize) {
+    #{$class}{
+        width: $w;
+        padding: $p;
+        text-align: center;
+        background-color: $bgc;
+        font-size: $fontSize;
+        cursor: pointer;
+        margin: 2px;
+        display: inline-block;
+        transition: all .4s;
+        &:hover{
+            background: darken($bgc, 20);
+            // background: lighten($bgc, 30);
+        }
+    }
 }
