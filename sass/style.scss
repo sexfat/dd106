@@ -1,5 +1,10 @@
-@import 'var';
+@import 'base/var';
+@import 'mixins/mixin_func';
+@import 'base/reset';
+
 @import 'layout/header';
+@import 'layout/footer';
+
 
 body {
     font-size: $fontSize;
@@ -34,19 +39,6 @@ h2 {
     font-size: $fontSize *4;
 }
 
-@mixin margins() {   
-    margin: 20px;
-}
-
-@mixin marginAuto(){
-    .marginAuto {
-       margin: 0 auto; 
-    }
-}
-
-@mixin paddings() {
-    padding: 20px;
-}
 
 .box-10 {
     @include margins();
@@ -55,6 +47,24 @@ h2 {
 
 .box-all {
     @include paddings();
+    @include boxSizing();
 }
 
-@include marginAuto();
+.box {
+    @include rect(100px, 30px, #fff)
+}
+
+.box-1 {
+    @include rect(300px, 400px, rgb(250, 2, 2));
+}
+
+#box-8 {
+    @include rect(500px, 300px, #444);
+}
+#box-default {
+    @include rect(100px, 300px, #eee);
+}
+
+.borderline {
+    @include borderline(100px);
+}

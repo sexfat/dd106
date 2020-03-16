@@ -1,0 +1,60 @@
+@mixin margins() {
+    margin: 20px;
+    @include boxSizing();
+}
+
+@mixin marginAuto() {
+    .marginAuto {
+        margin: 0 auto;
+    }
+}
+
+@mixin paddings() {
+    padding: 20px;
+}
+
+@mixin boxSizing {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+@mixin h1title($fontSize) {
+    h1 {
+        font-size: $fontSize * 5;
+
+        span {
+            font-size: $fontSize * 2;
+        }
+    }
+}
+
+
+// h2標題
+@mixin h2title($fontSize) {
+    h2 {
+        font-size: $fontSize * 5;
+
+        span {
+            font-size: $fontSize * 2;
+        }
+    }
+}
+
+
+//預設值
+// @include rect(100px, 30px, #fff)
+@mixin rect($width:400px, $height:300px, $bgc:#fff) {
+    width: $width;
+    height: $height;
+    background-color: $bgc;
+    border: 1px solid $bgc;
+}
+
+// 空值
+/* 空值 */
+@mixin borderline($width, $borderColor:null) {
+    width: $width;
+    height: $width * 0.5;
+    border: 1px solid $borderColor;
+}
