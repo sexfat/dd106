@@ -65,14 +65,34 @@ footer {
 }
 
 body {
-  font-size: 17px;
+  font-size: 16px;
   font-family: "arial" san-serif;
   padding: 10px;
   color: #8c8c8c;
 }
 
+body h1 {
+  font-size: 85px;
+}
+
+body h2 {
+  font-size: 67px;
+}
+
+body h3 {
+  font-size: 60px;
+}
+
+body h4 {
+  font-size: 28.8px;
+}
+
+body h5 {
+  font-size: 16px;
+}
+
 div {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .wrappers {
@@ -82,11 +102,11 @@ div {
 }
 
 .wrappers h1 {
-  font-size: 85px;
+  font-size: 80px;
 }
 
 .wrappers h1 span {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 300;
   display: block;
   position: relative;
@@ -94,7 +114,7 @@ div {
 }
 
 h2 {
-  font-size: 68px;
+  font-size: 64px;
 }
 
 .box-10 {
@@ -142,5 +162,12 @@ h2 {
   width: 100px;
   height: 50px;
   border: 1px solid;
+}
+
+.section {
+  width: 20rem;
+  height: -90px;
+  font-size: 100px;
+  font: 5em;
 }
 /*# sourceMappingURL=style.css.map */

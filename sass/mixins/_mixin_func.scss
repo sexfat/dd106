@@ -58,3 +58,29 @@
     height: $width * 0.5;
     border: 1px solid $borderColor;
 }
+
+
+// 標題組件
+
+
+@mixin titleh1($fontSize){
+    h1 {
+        font-size: round($fontSize * 5.3);//四捨五入
+    }
+
+    h2 {
+        font-size: floor($fontSize * 4.2);//無條件捨去
+    }
+
+    h3 {
+        font-size: ceil($fontSize * 3.7);//無條件進位
+    }
+
+    h4 {
+        font-size: $fontSize * 1.8;
+    }
+
+    h5 {
+        font-size: $fontSize * 1;
+    }
+}
