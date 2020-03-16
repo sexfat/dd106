@@ -1,12 +1,18 @@
+nav {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 body {
-  font-size: 14px;
+  font-size: 17px;
   font-family: "arial" san-serif;
   padding: 10px;
-  color: #787878;
+  color: #8c8c8c;
 }
 
 div {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .wrappers {
@@ -16,11 +22,11 @@ div {
 }
 
 .wrappers h1 {
-  font-size: 70px;
+  font-size: 85px;
 }
 
 .wrappers h1 span {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 300;
   display: block;
   position: relative;
@@ -28,6 +34,19 @@ div {
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 68px;
+}
+
+.box-10 {
+  margin: 20px;
+  padding: 20px;
+}
+
+.box-all {
+  padding: 20px;
+}
+
+.marginAuto {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
