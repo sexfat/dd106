@@ -97,7 +97,7 @@ div {
 
 .wrappers {
   width: 1200px;
-  background-color: #ffbd43;
+  background-color: #333;
   margin: 0 auto;
 }
 
@@ -169,5 +169,27 @@ h2 {
   height: -90px;
   font-size: 100px;
   font: 5em;
+}
+
+.num {
+  width: 0px;
+}
+
+.nav ul li {
+  width: 100px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.nav ul li a {
+  color: red;
+}
+
+.nav ul li a:hover {
+  color: blue;
+}
+
+.nav ul li a:active {
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */

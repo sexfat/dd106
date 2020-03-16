@@ -4,9 +4,7 @@
 }
 
 @mixin marginAuto() {
-    .marginAuto {
         margin: 0 auto;
-    }
 }
 
 @mixin paddings() {
@@ -62,7 +60,6 @@
 
 // 標題組件
 
-
 @mixin titleh1($fontSize){
     h1 {
         font-size: round($fontSize * 5.3);//四捨五入
@@ -82,5 +79,21 @@
 
     h5 {
         font-size: $fontSize * 1;
+    }
+}
+
+
+//layout
+
+@mixin layout-full($width:100 , $bgc:null) {
+    @if $width==100  {
+        width: 100%; 
+        background-color: $bgc;
+        display: block;
+    }
+    @else {
+        width: $width + px;
+        background-color: $bgc;
+        @include marginAuto();
     }
 }
