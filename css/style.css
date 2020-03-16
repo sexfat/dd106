@@ -192,4 +192,8 @@ h2 {
 .nav ul li a:active {
   color: green;
 }
+
+.nav ul li a::before, .nav ul li a::after {
+  content: '';
+}
 /*# sourceMappingURL=style.css.map */

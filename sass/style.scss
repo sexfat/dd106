@@ -82,6 +82,7 @@ h2 {
     height: 10px - 100;
     font-size: 10 * 10px;
     font: (100 / 20) + em;
+
 }
 
 $num : 110;
@@ -106,21 +107,28 @@ $num : 110;
 
 
 
+
+
 .nav {
+
     ul {
         li {
             width: 100px;
             margin: 10px;
             display: inline-block;
+
             a {
                 color: red;
+
                 &:hover {
                     color: blue;
                 }
+
                 &:active {
                     color: green;
                 }
-                
+
+                @include mode();
             }
 
         }
