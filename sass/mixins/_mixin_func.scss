@@ -101,6 +101,7 @@
 
 @mixin mode(){
     &::before , &::after{
-       content: ''; 
+       content: '';
+       @content 
     }
 }

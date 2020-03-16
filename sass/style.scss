@@ -128,7 +128,9 @@ $num : 110;
                     color: green;
                 }
 
-                @include mode();
+                @include mode(){
+                    background-color: #fff;
+                };
             }
 
         }

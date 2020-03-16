@@ -195,5 +195,6 @@ h2 {
 
 .nav ul li a::before, .nav ul li a::after {
   content: '';
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
