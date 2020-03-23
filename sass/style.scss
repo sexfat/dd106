@@ -2,9 +2,16 @@
 @import 'mixins/mixin_func';
 @import 'base/reset';
 
+
+
 @import 'layout/header';
 @import 'layout/footer';
 
+
+//rwd
+@import 'page/destop';
+@import 'page/medium';
+@import 'page/small';
 
 
 
@@ -228,6 +235,12 @@ $num : 110;
 
 
 
+@mixin rectbox() {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
 %rectbox {
     width: 100px;
     height: 30px;
@@ -235,14 +248,16 @@ $num : 110;
 }
 
 .box-red {
-  @extend %rectbox;
-
-   background-color: #f70000;
+    //   @extend %rectbox;
+    @include rectbox();
+    background-color: #f70000;
 
 }
+
 .box-blue {
-    @extend %rectbox;
-  background-color:  #0004ff;
+    // @extend %rectbox;
+    @include rectbox();
+    background-color: #0004ff;
 }
 
 // .box-red {
@@ -258,3 +273,11 @@ $num : 110;
 //     margin-bottom: 10px;
 //     background-color:  #0004ff;
 // }
+
+
+
+
+
+
+
+

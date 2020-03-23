@@ -64,6 +64,31 @@ footer {
   background-color: #fff;
 }
 
+@media all and (min-width: 1200px) {
+  /* 桌機 */
+  .wrappers {
+    font-size: 200px;
+  }
+  .wrappers span {
+    background-color: #fff;
+    display: block;
+  }
+}
+
+@media all and (min-width: 996px) {
+  /* 平板 */
+  .wrappers {
+    font: 100px;
+  }
+}
+
+@media all and (min-width: 763px) {
+  /* 手機 */
+  .wrappers {
+    font: 100px;
+  }
+}
+
 body {
   font-size: 14px;
   font-family: "arial" san-serif;
@@ -357,17 +382,17 @@ h2 {
   background-image: url("./img/img2.jpg");
 }
 
-.box-red, .box-blue {
+.box-red {
   width: 100px;
   height: 30px;
   margin-bottom: 10px;
-}
-
-.box-red {
   background-color: #f70000;
 }
 
 .box-blue {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
   background-color: #0004ff;
 }
 /*# sourceMappingURL=style.css.map */

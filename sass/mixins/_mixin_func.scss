@@ -135,4 +135,25 @@
         }
       }
     
+};
+
+
+@mixin rwd($breakpoint) {
+    @if $breakpoint==desktop {
+        @media all and (min-width: $desktop) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==medium {
+        @media all and (min-width: $medium) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint== small {
+        @media all and (min-width: $small) {
+            @content;
+        }
+    }
 }

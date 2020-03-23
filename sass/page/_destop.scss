@@ -1,0 +1,11 @@
+@include rwd(desktop) {
+    //桌機
+    /* 桌機 */
+    .wrappers {
+        font-size: 200px;
+        span {
+            background-color: #fff;
+            display: block;
+        }
+    }
+}
