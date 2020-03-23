@@ -139,21 +139,32 @@
 
 
 @mixin rwd($breakpoint) {
-    @if $breakpoint==desktop {
+    @if $breakpoint == desktop {
         @media all and (min-width: $desktop) {
             @content;
         }
     }
 
-    @else if $breakpoint==medium {
+    @else if $breakpoint == medium {
         @media all and (min-width: $medium) {
             @content;
         }
     }
 
-    @else if $breakpoint== small {
+    @else if $breakpoint == small {
         @media all and (min-width: $small) {
             @content;
         }
     }
 }
+
+
+@mixin title_h1($maps) {
+
+    @each $key,$value in $maps {
+        #{$key} {
+            font-size: $value;
+        }
+    }
+}
+

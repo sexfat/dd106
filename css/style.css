@@ -82,7 +82,7 @@ footer {
   }
 }
 
-@media all and (min-width: 763px) {
+@media all and (min-width: 720px) {
   /* 手機 */
   .wrappers {
     font: 100px;
@@ -394,5 +394,31 @@ h2 {
   height: 30px;
   margin-bottom: 10px;
   background-color: #0004ff;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

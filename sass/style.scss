@@ -275,9 +275,41 @@ $num : 110;
 // }
 
 
+// $nums : 10px 20px 30px 40px;
+
+// .box {
+//    margin:length($nums);
+// }
+
+$nums : 10px 20px 30px;
+$color: #fff;
+
+@include title_h1($titles);
 
 
+$breakpoint-rwd :(moblie : 721px,
+    medium : 996px,
+    desktop : 1200px,
+    xl-desktop : 2000px
+);
 
 
+@mixin rwd-each($a) {
+    @each $viewpoint,$num in $breakpoint-rwd {
+        @if $a==$viewpoint {
+            @media all and (min-width : $num) {
+                @content
+            }
+        }
+    }
+};
+
+
+@include rwd-each(desktop){
+
+body {
+   font-size: 30px; 
+  }
+}
 
 
