@@ -159,18 +159,18 @@ $num : 110;
 
 
 
-// %attr {
-//     display: inline-block;
-//     background-color: rgb(255, 241, 49);
-//     height: 20px;
-// }
+%attr {
+    display: inline-block;
+    background-color: rgb(255, 241, 49);
+    height: 30px;
+}
 
 
 @include grid(12) {
-    display: inline-block;
-    background-color: rgb(255, 241, 49);
-    height: 20px;
-
+    @extend %attr;
+    // display: inline-block;
+    // background-color: rgb(255, 241, 49);
+    // height: 20px;
 }
 
 // @mixin imgUrl($val) {
@@ -189,7 +189,7 @@ $num : 110;
         @each $var in $link {
             .img_#{$var} {
                 background-image: url('./img/#{$var}.jpg');
-                @content
+                @content;
             }
         }
     }
@@ -198,7 +198,7 @@ $num : 110;
         @each $var in $link {
             .img_#{$var} {
                 background-image: url('./img/#{$var}.png');
-                @content
+                @content;
             }
         }
     }
@@ -206,22 +206,55 @@ $num : 110;
 
 ;
 
-.wrapper {
-    @include imgUrl(jpg , a1 b1 img2 );
+@include imgUrl(jpg , a1 b1 img2 );
+// .wrapper {
+
+//     @include imgUrl(jpg , a1 b1 img2 );
+// }
+// .wrapper-about {
+//     @include imgUrl(png , a12 b12 img3 ){
+//       width: 100%;
+//     };
+// }
+
+
+// .wrapper-contact {
+//     @include imgUrl(jpg , c1 cv12 img4 ) {
+//     display: block;
+//     }
+// }
+
+// ;
+
+
+
+%rectbox {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 
+.box-red {
+  @extend %rectbox;
 
-.wrapper-about {
-    @include imgUrl(png , a12 b12 img3 ){
-      width: 100%;
-    };
+   background-color: #f70000;
+
+}
+.box-blue {
+    @extend %rectbox;
+  background-color:  #0004ff;
 }
 
+// .box-red {
+//     width: 100px;
+//     height: 30px;
+//     margin-bottom: 10px;
+//     background-color: #f70000;
+// }
 
-.wrapper-contact {
-    @include imgUrl(jpg , c1 cv12 img4 ) {
-        display: block;
-    }
-}
-
-;
+// .box-blue {
+//     width: 100px;
+//     height: 30px;
+//     margin-bottom: 10px;
+//     background-color:  #0004ff;
+// }

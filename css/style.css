@@ -291,129 +291,83 @@ h2 {
   width: 10px;
 }
 
-.col-md-1 {
-  width: 8%;
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
   display: inline-block;
   background-color: #fff131;
-  height: 20px;
+  height: 30px;
+}
+
+.col-md-1 {
+  width: 8%;
 }
 
 .col-md-2 {
   width: 16%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-3 {
   width: 25%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-4 {
   width: 33%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-5 {
   width: 41%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-6 {
   width: 50%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-7 {
   width: 58%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-8 {
   width: 66%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-9 {
   width: 75%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-10 {
   width: 83%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-11 {
   width: 91%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
 .col-md-12 {
   width: 100%;
-  display: inline-block;
-  background-color: #fff131;
-  height: 20px;
 }
 
-.wrapper .img_a1 {
+.img_a1 {
   background-image: url("./img/a1.jpg");
 }
 
-.wrapper .img_b1 {
+.img_b1 {
   background-image: url("./img/b1.jpg");
 }
 
-.wrapper .img_img2 {
+.img_img2 {
   background-image: url("./img/img2.jpg");
 }
 
-.wrapper-about .img_a12 {
-  background-image: url("./img/a12.png");
-  width: 100%;
+.box-red, .box-blue {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 
-.wrapper-about .img_b12 {
-  background-image: url("./img/b12.png");
-  width: 100%;
+.box-red {
+  background-color: #f70000;
 }
 
-.wrapper-about .img_img3 {
-  background-image: url("./img/img3.png");
-  width: 100%;
-}
-
-.wrapper-contact .img_c1 {
-  background-image: url("./img/c1.jpg");
-  display: block;
-}
-
-.wrapper-contact .img_cv12 {
-  background-image: url("./img/cv12.jpg");
-  display: block;
-}
-
-.wrapper-contact .img_img4 {
-  background-image: url("./img/img4.jpg");
-  display: block;
+.box-blue {
+  background-color: #0004ff;
 }
 /*# sourceMappingURL=style.css.map */
