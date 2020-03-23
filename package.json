@@ -1,0 +1,23 @@
+{
+  "name": "106project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sexfat/dd106.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sexfat/dd106/issues"
+  },
+  "homepage": "https://github.com/sexfat/dd106#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "jquery": "^3.4.1"
+  }
+}
