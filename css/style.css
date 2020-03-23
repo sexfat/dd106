@@ -201,7 +201,7 @@ h2 {
 }
 
 .btn {
-  width: 100px;
+  width: 10px;
   padding: 10px;
   text-align: center;
   background-color: #f7fc00;
@@ -249,5 +249,93 @@ h2 {
 
 .btn-wide:hover {
   background: #cccccc;
+}
+
+.box_1 {
+  width: 1px;
+}
+
+.box_2 {
+  width: 2px;
+}
+
+.box_3 {
+  width: 3px;
+}
+
+.box_4 {
+  width: 4px;
+}
+
+.box_5 {
+  width: 5px;
+}
+
+.box_6 {
+  width: 6px;
+}
+
+.box_7 {
+  width: 7px;
+}
+
+.box_8 {
+  width: 8px;
+}
+
+.box_9 {
+  width: 9px;
+}
+
+.box_10 {
+  width: 10px;
+}
+
+.col-md-1 {
+  width: 8.33333%;
+}
+
+.col-md-2 {
+  width: 16.66667%;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+.col-md-4 {
+  width: 33.33333%;
+}
+
+.col-md-5 {
+  width: 41.66667%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-7 {
+  width: 58.33333%;
+}
+
+.col-md-8 {
+  width: 66.66667%;
+}
+
+.col-md-9 {
+  width: 75%;
+}
+
+.col-md-10 {
+  width: 83.33333%;
+}
+
+.col-md-11 {
+  width: 91.66667%;
+}
+
+.col-md-12 {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

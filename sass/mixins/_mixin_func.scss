@@ -123,3 +123,15 @@
         }
     }
 }
+
+
+// Grid system
+
+@mixin grid($num) {
+    @for $i from 1 through $num {
+        .col-md-#{$i} {
+          width: ($i / $num) * 100%;
+        }
+      }
+    
+}

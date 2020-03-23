@@ -141,6 +141,29 @@ $num : 110;
 }
 
 
-@include btn('.btn', 100px, 10px, rgb(247, 252, 0), $fontSize);
+@include btn('.btn', 10px, 10px, rgb(247, 252, 0), $fontSize);
 @include btn('.btn-middle', 110px, 12px, rgb(168, 240, 0), ceil($fontSize*1.2));
-@include btn('.btn-wide', 150px, 15px, #fff, ceil($fontSize*1.5))
+@include btn('.btn-wide', 150px, 15px, #fff, ceil($fontSize*1.5));
+
+
+//through 跟 to 的差異
+@mixin boxs($num) {
+    @for $i from 1 through $num {
+        .box_#{$i} {
+          width:  $i * 1px;
+        }
+    }
+}
+@include boxs(10);
+
+
+
+
+@include grid(12);
+
+
+
+
+
+
+
