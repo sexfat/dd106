@@ -168,3 +168,15 @@
     }
 }
 
+
+
+@mixin rwd-each($a) {
+    @each $viewpoint,$num in $breakpoint-rwd {
+        @if $a==$viewpoint {
+            @media all and (min-width : $num) {
+                @content
+            }
+        }
+    }
+};
+

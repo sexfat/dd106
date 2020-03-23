@@ -287,29 +287,45 @@ $color: #fff;
 @include title_h1($titles);
 
 
-$breakpoint-rwd :(moblie : 721px,
-    medium : 996px,
-    desktop : 1200px,
-    xl-desktop : 2000px
-);
-
-
-@mixin rwd-each($a) {
-    @each $viewpoint,$num in $breakpoint-rwd {
-        @if $a==$viewpoint {
-            @media all and (min-width : $num) {
-                @content
-            }
-        }
+@include rwd-each(desktop) {
+    body {
+        font-size: 30px;
     }
-};
-
-
-@include rwd-each(desktop){
-
-body {
-   font-size: 30px; 
-  }
 }
 
 
+@include rwd-each(medium) {
+    body {
+        font-size: 40px;
+
+    }
+}
+
+
+$list : 10px 20px 30px 40px 50px;
+
+
+.boxlist {
+    width: length($list);
+    height: nth($list, 2)
+}
+
+
+
+@mixin margin-auto($val...) {
+    @if length($val)==0 {
+        margin: 0 auto;
+    }
+    @else if length($val)==1 {
+        margin: $val auto;
+    }
+    @else {
+        margin: nth($val, 1) auto nth($val, 2);
+    }
+
+}
+
+.box-auto {
+    width: 100px;
+    @include margin-auto(10px , 20px);
+}

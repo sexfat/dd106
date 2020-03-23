@@ -421,4 +421,20 @@ h5 {
     font-size: 30px;
   }
 }
+
+@media all and (min-width: 996px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+.boxlist {
+  width: 5;
+  height: 20px;
+}
+
+.box-auto {
+  width: 100px;
+  margin: 10px auto 20px;
+}
 /*# sourceMappingURL=style.css.map */
