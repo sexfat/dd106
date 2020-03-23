@@ -63,4 +63,29 @@ nav {
 footer {
   background-color: #fff;
 }
+
+@media all and (min-width: 1200px) {
+  /* 桌機 */
+  .wrappers {
+    font-size: 200px;
+  }
+  .wrappers span {
+    background-color: #fff;
+    display: block;
+  }
+}
+
+@media all and (min-width: 996px) {
+  /* 平板 */
+  .wrappers {
+    font: 100px;
+  }
+}
+
+@media all and (min-width: 720px) {
+  /* 手機 */
+  .wrappers {
+    font: 100px;
+  }
+}
 /*# sourceMappingURL=aboutus.css.map */

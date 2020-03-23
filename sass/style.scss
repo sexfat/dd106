@@ -148,7 +148,7 @@ $num : 110;
 }
 
 
-@include btn('.btn', 10px, 10px, rgb(247, 252, 0), $fontSize);
+@include btn('.btn', 60px, 10px, rgb(247, 252, 0), $fontSize);
 @include btn('.btn-middle', 110px, 12px, rgb(168, 240, 0), ceil($fontSize*1.2));
 @include btn('.btn-wide', 150px, 15px, #fff, ceil($fontSize*1.5));
 
@@ -310,20 +310,6 @@ $list : 10px 20px 30px 40px 50px;
     height: nth($list, 2)
 }
 
-
-
-@mixin margin-auto($val...) {
-    @if length($val)==0 {
-        margin: 0 auto;
-    }
-    @else if length($val)==1 {
-        margin: $val auto;
-    }
-    @else {
-        margin: nth($val, 1) auto nth($val, 2);
-    }
-
-}
 
 .box-auto {
     width: 100px;

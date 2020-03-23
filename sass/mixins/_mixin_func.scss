@@ -180,3 +180,19 @@
     }
 };
 
+
+@mixin margin-auto($val...) {
+    @if length($val)==0 {
+        margin: 0 auto;
+    }
+    @else if length($val)==1 {
+        margin: $val auto;
+    }
+    @else {
+        margin: nth($val, 1) auto nth($val, 2);
+    }
+
+}
+
+
+
