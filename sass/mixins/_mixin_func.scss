@@ -130,7 +130,8 @@
 @mixin grid($num) {
     @for $i from 1 through $num {
         .col-md-#{$i} {
-          width: ($i / $num) * 100%;
+          width: floor(($i / $num) * 100%);
+         @content
         }
       }
     

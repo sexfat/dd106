@@ -150,20 +150,78 @@ $num : 110;
 @mixin boxs($num) {
     @for $i from 1 through $num {
         .box_#{$i} {
-          width:  $i * 1px;
+            width: $i * 1px;
         }
     }
 }
+
 @include boxs(10);
 
 
 
-
-@include grid(12);
-
-
-
-
-
+// %attr {
+//     display: inline-block;
+//     background-color: rgb(255, 241, 49);
+//     height: 20px;
+// }
 
 
+@include grid(12) {
+    display: inline-block;
+    background-color: rgb(255, 241, 49);
+    height: 20px;
+
+}
+
+// @mixin imgUrl($val) {
+//     @each $var in $val {
+//         .img_#{$var} {
+//             background-image: url('./img/#{$var}.jpg');
+//         }
+//     }
+// }
+
+
+// @include imgUrl(a1  a2  a3 b2);
+
+@mixin imgUrl($file , $link) {
+    @if $file==jpg {
+        @each $var in $link {
+            .img_#{$var} {
+                background-image: url('./img/#{$var}.jpg');
+                @content
+            }
+        }
+    }
+
+    @else if $file==png {
+        @each $var in $link {
+            .img_#{$var} {
+                background-image: url('./img/#{$var}.png');
+                @content
+            }
+        }
+    }
+}
+
+;
+
+.wrapper {
+    @include imgUrl(jpg , a1 b1 img2 );
+}
+
+
+.wrapper-about {
+    @include imgUrl(png , a12 b12 img3 ){
+      width: 100%;
+    };
+}
+
+
+.wrapper-contact {
+    @include imgUrl(jpg , c1 cv12 img4 ) {
+        display: block;
+    }
+}
+
+;
