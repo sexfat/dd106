@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
+var fileinclude = require('gulp-file-include');
 
 
 
@@ -34,5 +35,15 @@ gulp.task('minicss',['concatcss'], function () {
 gulp.task('watch' ,function () {
     gulp.watch('sass/*.scss',['sass']);
     gulp.watch('css/*.css',['concatcss']);
-})
+});
+
+
+gulp.task('fileinclude', function() {
+    gulp.src(['contactus.html'])
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest('./app'));
+  });
 
