@@ -10,3 +10,13 @@ body {
 
 .wrapper {
   width: 100%; }
+
+.box03 {
+  position: relative;
+  top: 100px;
+  left: 400px; }
+
+.box02 {
+  position: relative;
+  top: 100px;
+  left: 200px; }
