@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
 var fileinclude = require('gulp-file-include');
+var browserSync = require('browser-sync').create();
+var reload = browserSync.reload;
 
 
 
@@ -46,4 +48,21 @@ gulp.task('fileinclude', function() {
       }))
       .pipe(gulp.dest('./app'));
   });
+
+
+
+  gulp.task('default', function () {
+    browserSync.init({
+        server: {
+            //根目錄
+            baseDir: "./",
+            index: "tweenmax.html"
+        }
+    });
+
+    gulp.watch(["sass/*.scss", "sass/**/*.scss"], ['sass']).on('change', reload);
+    gulp.watch(["*.html"] , ['fileinclude']).on('change', reload);
+    gulp.watch(["js/*.js"]).on('change', reload);
+});
+
 
