@@ -5,6 +5,19 @@ body {
 
 
 }
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.btn {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(140, 254, 1);
+}
+
 
 .box {
     background-color: rgba(255, 255, 0, 0.913);
@@ -22,16 +35,21 @@ body {
     position: relative;
     top: 100px;
     left: 400px;
-
-
 }
 
 
 .box02 {
-
     position: relative;
     top: 100px;
     left: 200px;
+}
+
+.box04 {
+    background-color: rgb(255, 0, 0);
+}
+
+.boxother {
+  background-color: rgb(0, 255, 166);
 
 
 }
