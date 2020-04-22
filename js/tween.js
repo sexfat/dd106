@@ -174,6 +174,41 @@ stick.to('.scrollstick_01' , 1 , {
 }).setPin('.bg3').setTween(stick).addIndicators().addTo(controller)   
 
 
+//滾動視差
+
+
+var tlp = new TimelineMax();
+
+var parallax01 = TweenMax.to('.boxpallax1' ,1, {
+    y: '-10%',
+});
+
+var parallax02 = TweenMax.to('.boxpallax2' ,1, {
+    y: '100%',
+});
+
+var parallax03 = TweenMax.to('.boxpallax3' ,1, {
+    y: '-220%',
+});
+
+
+tlp.add([parallax01 , parallax02 , parallax03]);
+
+new ScrollMagic.Scene({
+    triggerElement: '#keypoint04',
+    // triggerHook: 0,
+    duration: '100%'
+}).setTween(tlp).addIndicators().addTo(controller)   
+
+
+
+
+
+
+
+
+
+
 
 
 

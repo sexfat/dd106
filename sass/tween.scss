@@ -6,6 +6,7 @@ body {
 
 
 }
+
 section {
     width: 100vw;
     height: 100vh;
@@ -50,12 +51,13 @@ section {
 }
 
 .boxother {
-  background-color: rgb(0, 255, 166);
+    background-color: rgb(0, 255, 166);
 }
 
 .bg2 {
     background-color: rgb(247, 214, 27);
-    transition:  all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
     .title {
         color: rgb(247, 214, 27);
         text-align: center;
@@ -63,18 +65,47 @@ section {
         position: relative;
         top: 120px;
     }
-    &.on{
+
+    &.on {
         background-color: rgb(43, 5, 68);
     }
-} 
+}
 
 
 .bg3 {
     background-color: rgb(133, 141, 255);
-  .box {
-      margin-bottom: 10px;
-      width: 300px;
-  }
+
+    .box {
+        margin-bottom: 10px;
+        width: 300px;
+    }
+}
+
+.bg4 {
+    background-color: rgb(204, 164, 255);
+    background-image: url(https://placem.at/people);
+    background-size: cover;
+    .box {
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    .boxpallax1 {
+        position: relative;
+        top: 300px;
+        left: 600px;
+    }
+
+    .boxpallax2 {
+        position: relative;
+        top:300px;
+        left: 700px;
+    }
+
+    .boxpallax3 {
+        position: relative;
+        top: 200px;
+        left: 800px;
+    }
 
 
 
