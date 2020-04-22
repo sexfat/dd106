@@ -155,3 +155,26 @@ new ScrollMagic.Scene({
     triggerElement: '#keypoint02',
     triggerHook: 0.5,
 }).setClassToggle('.bg2', 'on').setTween(title_animation).addIndicators().addTo(controller)
+
+
+let stick = new TimelineMax();
+
+
+stick.to('.scrollstick_01' , 1 , {
+    x: 300
+}).to('.scrollstick_02' , 1 , {
+    x: 400
+}).to('.scrollstick_03' ,1 , {
+   x: 500});
+
+   new ScrollMagic.Scene({
+    triggerElement: '#keypoint03',
+    triggerHook: 0,
+    duration: '300%'
+}).setPin('.bg3').setTween(stick).addIndicators().addTo(controller)   
+
+
+
+
+
+

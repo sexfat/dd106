@@ -39,13 +39,19 @@ section {
   background-color: #00ffa6; }
 
 .bg2 {
-  background-color: #524917;
+  background-color: #f7d61b;
   transition: all 1s ease-in-out; }
   .bg2 .title {
-    color: #524917;
+    color: #f7d61b;
     text-align: center;
     font-size: 80px;
     position: relative;
     top: 120px; }
   .bg2.on {
     background-color: #2b0544; }
+
+.bg3 {
+  background-color: #858dff; }
+  .bg3 .box {
+    margin-bottom: 10px;
+    width: 300px; }
