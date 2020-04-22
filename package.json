@@ -18,7 +18,8 @@
   "homepage": "https://github.com/sexfat/dd106#readme",
   "dependencies": {
     "gsap": "^2.1.3",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "scrollmagic": "^2.0.7"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

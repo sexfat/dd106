@@ -2,6 +2,8 @@
 //     x: 400,
 //     y:400,
 //    ease: Back.easeOut
+var controller = new ScrollMagic.Controller();
+
 
 
 
@@ -117,4 +119,24 @@ tl.to('.boxall', 1, {
 }).to('.boxall3', 1, {
     x: 100,
     y: 300
-})
+});
+
+// scrollmagic
+
+
+let scroll =  TweenMax.to('.box_scoll' , 1,{
+    x: 400
+});
+
+
+new ScrollMagic.Scene({
+     triggerElement : '#keypoint01',
+     triggerHook : 0.5,
+     offset: 0,
+     reverse: true,
+     duration :  300
+   }).setTween(scroll).addIndicators().addTo(controller)
+
+
+
+
