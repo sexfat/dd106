@@ -37,3 +37,15 @@ section {
 
 .boxother {
   background-color: #00ffa6; }
+
+.bg2 {
+  background-color: #524917;
+  transition: all 1s ease-in-out; }
+  .bg2 .title {
+    color: #524917;
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+    top: 120px; }
+  .bg2.on {
+    background-color: #2b0544; }

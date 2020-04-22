@@ -124,21 +124,34 @@ tl.to('.boxall', 1, {
 // scrollmagic
 
 
-let scroll =  TweenMax.to('.box_scoll' , 1,{
-    x: 400
+let scroll = TweenMax.to('.box_scoll', 1, {
+    x: 800
 });
 
 
 
 
 new ScrollMagic.Scene({
-     triggerElement : '#keypoint01',
-     triggerHook : 0.5,
-     offset: 0,
-     reverse: true,
-     duration :  300
-   }).setTween(scroll).addIndicators().addTo(controller)
+    triggerElement: '#keypoint01',
+    triggerHook: 0.5,
+    offset: 0,
+    reverse: false,
+    duration: 300
+}).setTween(scroll).addIndicators().addTo(controller)
+
+
+let title_animation = TweenMax.fromTo('.animation_title', 1, {
+    y: 0,
+    opacity: 0
+}, {
+   y: 100 , 
+   opacity: 1 
+})
 
 
 
 
+new ScrollMagic.Scene({
+    triggerElement: '#keypoint02',
+    triggerHook: 0.5,
+}).setClassToggle('.bg2', 'on').setTween(title_animation).addIndicators().addTo(controller)
