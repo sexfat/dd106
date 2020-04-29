@@ -175,8 +175,6 @@ stick.to('.scrollstick_01' , 1 , {
 
 
 //滾動視差
-
-
 var tlp = new TimelineMax();
 
 var parallax01 = TweenMax.to('.boxpallax1' ,1, {
@@ -196,7 +194,6 @@ tlp.add([parallax01 , parallax02 , parallax03]);
 
 new ScrollMagic.Scene({
     triggerElement: '#keypoint04',
-    // triggerHook: 0,
     duration: '100%'
 }).setTween(tlp).addIndicators().addTo(controller)   
 
